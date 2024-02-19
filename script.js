@@ -31,9 +31,9 @@ function loadVoices() {
   // Fetch the available voices.
   var voices = speechSynthesis.getVoices().filter(function (voice, i) {
     // return voice.lang === "en-US" && voice.voiceURI.includes("Natural");
-    return voice.lang === "en-US";
+    // return voice.lang === "en-US";
     // return ["en-US", "bn-BD"].indexOf(voice.lang) !== -1;
-    // return true;
+    return true;
     // }).sort(function (a, b) {
     //   return a.lang - b.lang;
   });
